@@ -1,3 +1,7 @@
+@if(Session::get('user')=='logedin')
+<script>window.location = "/AdminDashboard";</script>
+@endif
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
