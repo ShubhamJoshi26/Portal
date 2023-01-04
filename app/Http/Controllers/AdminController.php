@@ -29,6 +29,7 @@ class AdminController extends Controller
      }
         if(!empty($data) && $data['id']!='')
         {
+            session()->put(['user'=>'logedin','username'=>$data['name'],'userid'=>$data['id']]);
             return view('dashboard',['Users'=>$userData]);
         }
     }

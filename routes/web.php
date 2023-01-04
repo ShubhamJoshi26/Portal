@@ -38,3 +38,6 @@ Route::get('/admin',[AdminController::class,'index']);
 Route::post('/admin_login',[AdminController::class,'LoginAdmin']);
 Route::get('/adminRegistration',[AdminController::class,'adminRegister']);
 Route::post('/admin_register',[AdminController::class,'CreateAdmin']);
+Route::get('/AdminDashboard',function(){
+    return view('dashboard');
+});
